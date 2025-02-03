@@ -36,6 +36,10 @@ nav {
     color: white;
     font-size: clamp(1.5rem, 2vw, 2.5rem);
     font-weight: bold;
+    text-decoration: none; 
+    display: inline-block; 
+}
+
 }
 
 .logo span {
