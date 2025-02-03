@@ -106,12 +106,34 @@ section {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 50px #b74b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container .image img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Ensures smooth animation */
+}
+
+/* Add animation on hover */
+.main-container .image:hover img {
+    animation: animate 1.5s ease-in-out infinite alternate;
+}
+
+/* Keyframes */
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* CONTENT */
